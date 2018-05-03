@@ -13,7 +13,7 @@ export default ({data}) => {
       {data.allMarkdownRemark.edges.map(({node}) => (
         <div key={node.id} style={{marginBottom: `4rem`}}>
           <Link to={node.fields.slug}>
-            <h2 style={{marginBottom: '2px'}}>{node.frontmatter.title}</h2>
+            <h2 style={{marginBottom: '2px', color: '#0099FF'}}>{node.frontmatter.title}</h2>
           </Link>
           <p style={{marginTop: `1px`, float: `right`}}>{node.frontmatter.date}</p>
         </div>

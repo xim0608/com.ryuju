@@ -10,8 +10,8 @@ export default ({data}) => {
         <Img resolutions={data.file.childImageSharp.resolutions} style={{flex: `0 0 96px`, margin: 0}}></Img>
         <div style={{flex: `1`, marginLeft: `18px`, padding: `12px`}}>
           <h1 style={{margin: `0 0 12px 0`, padding: `0`}}>Ryuki Wada</h1>
-          <a href="https://github.com/xim0608"><img src={ghlogo} style={{padding: '7px 5px'}}/></a>
-          <a href="http://xim0608.hateblo.jp/"><img src={hatenalogo} width="48"/></a>
+          <a href="https://github.com/xim0608" style={{backgroundImage: 'none', margin: 0}}><img src={ghlogo} style={{padding: '7px 5px', verticalAlign: `bottom`, marginBottom: 0}}/></a>
+          <a href="http://xim0608.hateblo.jp/" style={{backgroundImage: 'none', margin: 0}}><img src={hatenalogo} width="48" style={{verticalAlign: `bottom`, marginBottom: 0}}/></a>
         </div>
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
