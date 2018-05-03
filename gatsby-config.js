@@ -2,6 +2,8 @@ module.exports = {
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-catch-links`,
     // {
     //   resolve: `gatsby-plugin-typography`,
     //   options: {
@@ -15,5 +17,7 @@ module.exports = {
         name: 'pages',
       },
     },
+    `gatsby-transformer-remark`,
+    `gatsby-image`
   ],
 };

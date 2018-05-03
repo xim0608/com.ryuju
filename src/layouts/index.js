@@ -12,9 +12,8 @@ export default ({children}) => (
   <div style={{margin: `0 auto`, maxWidth: 550, padding: `8rem 1rem`}}>
     <header style={{ marginBottom: `1.5rem` }}>
       <ul style={{ listStyle: `none`, float: `right` }}>
-        <ListLink to="/">Home</ListLink>
+        <ListLink to="/">Blog</ListLink>
         <ListLink to="/about/">About</ListLink>
-        <ListLink to="/blog/">Blog</ListLink>
       </ul>
     </header>
     <h3>rykwd</h3>
