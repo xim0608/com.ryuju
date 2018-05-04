@@ -20,7 +20,7 @@ export default ({data}) => {
 }
 
 export const query = graphql`
-  query IndexQuery {
+  query AboutQuery {
     markdownRemark(frontmatter: {category: {eq: "profile"}}) {
       html
     }

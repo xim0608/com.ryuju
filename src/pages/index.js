@@ -6,16 +6,15 @@ import Link from "gatsby-link"
 
 export default ({data}) => {
 
-  // const datas = data.allMarkdownRemark.edges.filter(function(el, index, array){return (!el.id.match(/profile/))});
 
   return (
-    <div style={{marginTop: `3rem`}}>
+    <div style={{marginTop: `0rem`}}>
       {data.allMarkdownRemark.edges.map(({node}) => (
-        <div key={node.id} style={{marginBottom: `4rem`}}>
+        <div key={node.id}>
           <Link to={node.fields.slug}>
-            <h2 style={{marginBottom: '2px', color: '#0099FF'}}>{node.frontmatter.title}</h2>
+            <h2 style={{marginBottom: '2px', color: '#0099FF', fontSize: '1rem'}}>{node.frontmatter.title}</h2>
           </Link>
-          <p style={{marginTop: `1px`, float: `right`}}>{node.frontmatter.date}</p>
+          <p style={{marginTop: `1px`, fontSize: '0.8rem'}}>{node.frontmatter.date}</p>
         </div>
       ))}
     </div>

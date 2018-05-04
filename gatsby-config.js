@@ -24,6 +24,13 @@ module.exports = {
         name: 'contents',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/layouts`,
+        name: 'contents',
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-image`
   ],
